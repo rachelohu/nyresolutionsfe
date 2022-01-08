@@ -2,6 +2,7 @@
 import AllPosts from "./pages/AllPosts";
 import SinglePost from "./pages/SinglePost";
 import Form from "./pages/Form";
+import BootstrapCarousel from "./components/BootstrapCarousel";
 
 // import React Hooks
 import { useState, useEffect } from "react";
@@ -109,6 +110,8 @@ function App(props) {
   /////////////////
   return (
     <div className="App">
+       <BootstrapCarousel/>
+       
       <h1 style={h1}>My New Year's Resolution List</h1>
       <Link to="/new"><button style={button}>Create New</button></Link>
       <Switch>
@@ -160,4 +163,3 @@ function App(props) {
 }
 
 export default App;
-

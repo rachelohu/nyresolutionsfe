@@ -12,8 +12,9 @@ const SinglePost = ({ posts, match, edit, deleteTodo}) => {
   const div = {
     textAlign: "center",
     border: "3px solid green",
-    width: "80%",
+    width: "50%",
     margin: "30px auto",
+    background: "white",
   };
 
   return (

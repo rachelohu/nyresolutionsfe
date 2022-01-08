@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "react-router-dom"
+import { Link, withRouter } from "react-router-dom"
 
 const Post = ({post}) => {
 
@@ -10,9 +10,9 @@ const Post = ({post}) => {
         textAlign: "center",
         border: "3px solid",
         margin: "10px auto",
-        width: "80%"
+        width: "50%",
+        background: "white",
     }
-
 
     return <div style={div}>
         <Link to={`/post/${post.id}`}>
